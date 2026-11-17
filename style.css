@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #ffe4ec,
+        #e4f3ff,
+        #fff2dc
+    );
+
+    font-family: 'Quicksand', sans-serif;
+    color: #795b65;
+    padding: 40px 15px;
+    overflow-x: hidden;
+}
+
+/* Main container */
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    position: relative;
+}
+
+/* Top decoration */
+
+.top-decoration {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.top-decoration span {
+    font-size: 45px;
+}
+
+.top-decoration p {
+    margin-top: 10px;
+    color: #d77e9b;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* Letter card */
+
+.letter {
+    background: #fffdf8;
+    padding: 50px 55px;
+    border-radius: 30px;
+    border: 4px solid #ffffff;
+    box-shadow: 0 12px 35px rgba(190, 128, 153, 0.18);
+    position: relative;
+}
+
+/* Sticker */
+
+.sticker {
+    position: absolute;
+    top: -27px;
+    right: 35px;
+    background: #ffe3eb;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transform: rotate(12deg);
+    box-shadow: 0 4px 12px #efc4d2;
+}
+
+/* Heading */
+
+.date {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #d895a9;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 34px;
+    font-weight: 400;
+    color: #e58da9;
+}
+
+.divider {
+    text-align: center;
+    color: #e9a9bd;
+    margin: 20px 0 30px;
+    font-size: 15px;
+}
+
+/* Letter paragraphs */
+
+.letter-content {
+    font-size: 15px;
+    line-height: 2;
+    color: #79636b;
+    text-align: left;
+}
+
+.letter-content p {
+    margin-bottom: 20px;
+}
+
+.letter-content p:first-child {
+    font-weight: 700;
+    color: #d982a0;
+    font-size: 17px;
+}
+
+/* Ending */
+
+.ending {
+    text-align: right;
+    margin-top: 35px;
+    color: #a77b8a;
+}
+
+.ending p {
+    font-size: 14px;
+}
+
+.ending h2 {
+    font-family: 'Pacifico', cursive;
+    color: #e58da9;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.ending span {
+    font-size: 11px;
+    color: #c99aaa;
+}
+
+/* Bottom stickers */
+
+.bottom-sticker {
+    text-align: center;
+    font-size: 27px;
+    margin-top: 35px;
+}
+
+/* Floating decorations */
+
+.floating {
+    position: fixed;
+    pointer-events: none;
+    z-index: -1;
+    animation: float 4s ease-in-out infinite;
+}
+
+.heart1 {
+    top: 15%;
+    left: 8%;
+    color: #f29fbd;
+    font-size: 35px;
+}
+
+.heart2 {
+    bottom: 15%;
+    right: 9%;
+    color: #f5b4c8;
+    font-size: 30px;
+}
+
+.star1 {
+    top: 40%;
+    right: 12%;
+    color: #e5b96d;
+    font-size: 30px;
+}
+
+.star2 {
+    bottom: 25%;
+    left: 12%;
+    color: #e5b96d;
+    font-size: 25px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #c77f99;
+    line-height: 2;
+}
+
+footer span {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 35px 12px;
+    }
+
+    .letter {
+        padding: 40px 23px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .letter-content {
+        font-size: 13px;
+        line-height: 1.9;
+    }
+
+    .sticker {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        right: 20px;
+    }
+
+    .top-decoration span {
+        font-size: 35px;
+    }
+}
